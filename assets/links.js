@@ -13,6 +13,7 @@ window.SYMBIOSE_LINKS = {
   absences: "https://discord.com/channels/1017292498906906676/1292992505045979217",
   lootCouncilDiscord: "https://discord.com/channels/1017292498906906676/1484344247749447741",
   lootCouncilCurse: "https://www.curseforge.com/wow/addons/rclootcouncil",
+  lootNorthernSky: "https://www.curseforge.com/wow/addons/northern-sky-raid-tools",
   northernSky: "https://discord.com/channels/1017292498906906676/1529410733375356939",
   referents: "",
   lootAssignments: "",

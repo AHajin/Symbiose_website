@@ -912,11 +912,6 @@ tbody tr:last-child td {
     justify-content: center;
     text-align: center;
   }
-  .midnight-logo {
-  top: 0.25rem;
-  left: 0.25rem;
-  width: clamp(95px, 27vw, 135px);
-}
 }
 
 .footer p {
@@ -1134,30 +1129,6 @@ tbody tr:last-child td {
 
 .rewards-details .details-body > :first-child {
   margin-top: 0;
-}
-
-.midnight-logo {
-  position: absolute;
-  top: 0.45rem;
-  left: 0.45rem;
-  z-index: 2;
-
-  width: clamp(135px, 15vw, 205px);
-  pointer-events: none;
-}
-
-.midnight-logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-
-  opacity: 0.92;
-
-  filter:
-    saturate(0.82)
-    brightness(0.94)
-    contrast(1.08)
-    drop-shadow(0 5px 8px rgba(0, 0, 0, 0.75));
 }
 
 .midnight-welcome {

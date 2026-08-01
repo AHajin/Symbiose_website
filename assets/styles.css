@@ -1159,3 +1159,159 @@ tbody tr:last-child td {
     contrast(1.08)
     drop-shadow(0 5px 8px rgba(0, 0, 0, 0.75));
 }
+
+.midnight-welcome {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  width: min(1050px, calc(100% - 2rem));
+  min-height: 430px;
+  margin: clamp(1.5rem, 3vw, 2.5rem) auto 0;
+
+  padding:
+    clamp(1.75rem, 4vw, 3rem)
+    clamp(1.75rem, 36vw, 24rem)
+    clamp(1.75rem, 4vw, 3rem)
+    clamp(1.75rem, 4vw, 3rem);
+
+  text-align: left;
+  background: #08120d;
+  backdrop-filter: none;
+}
+
+.midnight-welcome::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background-image: url("midnight-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 68% 24%;
+
+  opacity: 0.78;
+
+  filter:
+    saturate(0.88)
+    brightness(0.84)
+    contrast(1.05);
+
+  transform: scale(1.02);
+}
+
+.midnight-welcome::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6, 17, 12, 0.90) 0%,
+      rgba(6, 17, 12, 0.82) 30%,
+      rgba(7, 16, 16, 0.58) 50%,
+      rgba(8, 11, 22, 0.22) 78%,
+      rgba(8, 11, 22, 0.10) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(6, 17, 12, 0.72) 0%,
+      transparent 52%
+    );
+}
+
+.midnight-welcome > * {
+  position: relative;
+  z-index: 2;
+}
+
+.midnight-welcome-logo {
+  display: block;
+  width: clamp(135px, 16vw, 190px);
+  height: auto;
+  margin: 0 0 1rem;
+
+  filter:
+    saturate(0.9)
+    brightness(0.96)
+    drop-shadow(0 5px 12px rgba(0, 0, 0, 0.6));
+}
+
+.midnight-welcome .hero-lead {
+  max-width: 570px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.midnight-welcome > p:not(.eyebrow) {
+  max-width: 570px;
+}
+
+.midnight-welcome .hero-actions {
+  justify-content: flex-start;
+}
+
+.midnight-welcome h1 {
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width: 760px) {
+  .midnight-welcome {
+    width: calc(100% - 1rem);
+    min-height: auto;
+    margin-top: 1rem;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+  }
+
+  .midnight-welcome::before {
+    background-size: cover;
+    background-position: 66% center;
+    opacity: 0.48;
+
+    filter:
+      saturate(0.86)
+      brightness(0.82)
+      contrast(1.04);
+
+    transform: scale(1.02);
+  }
+
+  .midnight-welcome::after {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(6, 17, 12, 0.72) 0%,
+        rgba(6, 17, 12, 0.84) 45%,
+        rgba(6, 17, 12, 0.94) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(6, 17, 12, 0.42),
+        rgba(8, 11, 22, 0.18)
+      );
+  }
+
+  .midnight-welcome-logo {
+    width: 140px;
+    margin: 0 auto 1rem;
+  }
+
+  .midnight-welcome .hero-lead,
+  .midnight-welcome > p:not(.eyebrow) {
+    max-width: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .midnight-welcome .hero-actions {
+    justify-content: center;
+  }
+
+  .midnight-welcome h1 {
+    font-size: clamp(2.35rem, 12vw, 3.5rem);
+  }
+}

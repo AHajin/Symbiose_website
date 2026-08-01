@@ -1122,3 +1122,11 @@ tbody tr:last-child td {
     color: #173d1e;
   }
 }
+
+.rewards-details .details-body {
+  padding: 0;
+}
+
+.rewards-details .details-body > :first-child {
+  margin-top: 0;
+}

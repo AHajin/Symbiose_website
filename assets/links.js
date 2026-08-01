@@ -15,7 +15,7 @@ window.SYMBIOSE_LINKS = {
   lootCouncilCurse: "https://www.curseforge.com/wow/addons/rclootcouncil",
   lootNorthernSky: "https://www.curseforge.com/wow/addons/northern-sky-raid-tools",
   northernSky: "https://discord.com/channels/1017292498906906676/1529410733375356939",
-  referents: "",
+  referents: "https://discord.com/channels/1017292498906906676/1533173097098645574",
   lootAssignments: "",
   attendance: "",
   contact: "https://discord.com/channels/1017292498906906676/1517127795837239446",

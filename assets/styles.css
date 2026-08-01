@@ -877,13 +877,41 @@ tbody tr:last-child td {
 }
 
 .footer-inner {
-  display: flex;
+  display: block;
   width: min(calc(100% - 2rem), var(--content));
-  min-height: 120px;
+  min-height: auto;
   margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.footer p.footer-thanks {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto 1.75rem;
+  text-align: center;
+  line-height: 1.7;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer-thanks strong {
+  color: var(--green-bright);
+}
+
+.footer-bottom {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  padding-top: 1.25rem;
+}
+
+@media (max-width: 720px) {
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .footer p {
